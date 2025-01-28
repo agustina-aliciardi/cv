@@ -7,8 +7,10 @@
     <title>CV - Agustina Aliciardi</title>
     <link rel="stylesheet" href="estilos.css" type="text/css" />
     <link rel="shorcut icon" href="images/perfil.png" type="image" />
+    <script type="text/JavaScript" src="funciones.js"></script>
   </head>
   <body>
+    <button type="button" onclick="hola()">Saludar</button>
     <header>
       <img
         id="img-perfil"
@@ -350,49 +352,25 @@
       <section id="seccion-cursos">
         <img src="images/icon-trainings.webp" alt="cursos" class="icono" />
         <h3>Cursos</h3>
-        <div>
-          <h5>cloud development y metodologías agiles</h5>
-          <h6>universidad católica de córdoba</h6>
-          <h6>2014</h6>
-        </div>
-        <div>
-          <h5>programación en android</h5>
-          <h6>universidad católica de córdoba</h6>
-          <h6>2013</h6>
-        </div>
-        <div>
-          <h5>
-            Lenguajes tecno-mediáticos en educación superior: desafíos y
-            Posibilidades para el trabajo docente- n. Avanzado
-          </h5>
-          <h6>universidad católica de córdoba</h6>
-          <h6>2018</h6>
-        </div>
-        <div>
-          <h5>
-            Diseño tecno-pedagógico en tus clases: entre lo sincrónico y lo
-            Asincrónico
-          </h5>
-          <h6>universidad católica de córdoba</h6>
-          <h6>2024</h6>
-        </div>
-        <div>
-          <h5>portfolio institucional de recursos para docentes</h5>
-          <h6>universidad católica de córdoba</h6>
-          <h6>2021</h6>
-        </div>
-        <div>
-          <h5>taller de edición de videos educativos</h5>
-          <h6>universidad católica de córdoba</h6>
-          <h6>2021</h6>
-        </div>
-        <div>
-          <h5>
-            Turnitin y la integridad académica: herramienta para prevenir el
-            Plagio
-          </h5>
-          <h6>universidad católica de córdoba</h6>
-          <h6>2023</h6>
+        <div class="training-container">
+          <div class="training">
+            <img
+              src="images/certificates/2021_tau_behavior_driven_python.png"
+            />
+            <h5>behavior_driven_python</h5>
+          </div>
+          <div class="training">
+            <img
+              src="images/certificates/2021_tau_behavior_driven_python.png"
+            />
+            <h5>behavior_driven_python</h5>
+          </div>
+          <div class="training">
+            <img
+              src="images/certificates/2021_tau_behavior_driven_python.png"
+            />
+            <h5>behavior_driven_python</h5>
+          </div>
         </div>
       </section>
       <section id="seccion-contacto">
@@ -430,6 +408,35 @@
           >
         </p>
       </section>
+      <article class="container">
+        <div class="slider-wrapper">
+          <div class="slider">
+            <img
+              src="images/carrousel/primera.webp"
+              id="slider-1"
+              alt="carrousel"
+              class="image"
+            />
+            <img
+              src="images/carrousel/segunda.jpg"
+              id="slider-2"
+              alt="carrousel"
+              class="image"
+            />
+            <img
+              src="images/carrousel/tercera.webp"
+              id="slider-3"
+              alt="carrousel"
+              class="image"
+            />
+          </div>
+          <div class="slider-nav">
+            <a href="#slider-1" class="slider-button"></a>
+            <a href="#slider-2" class="slider-button"></a>
+            <a href="#slider-3" class="slider-button"></a>
+          </div>
+        </div>
+      </article>
     </main>
   </body>
 </html>
