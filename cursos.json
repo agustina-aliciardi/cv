@@ -119,5 +119,46 @@
     "completion-date": "12/15/2024",
     "length": "15hs 50min",
     "cert-id": "UC-60641a29-acbf-43a4-8575-9319df04f9f0"
+  },
+  {
+    "title": "Cloud development y Metodologías ágiles",
+    "pdf": "2014_catolica_cloud_dev.pdf",
+    "platform": "Universidad Católica de Córdoba",
+    "completion-date": "11/28/2014"
+  },
+  {
+    "title": "Programación en Android",
+    "pdf": "2014_catolica_android.pdf",
+    "platform": "Universidad Católica de Córdoba",
+    "completion-date": "09/23/2014"
+  },
+  {
+    "title": "Lenguajes tecno-mediáticos en educación superior: desafíos y Posibilidades para el trabajo docente- n. Avanzado",
+    "pdf": "2018_catolica_lenguajes_tecno-mediaticos.pdf",
+    "platform": "Universidad Católica de Córdoba",
+    "completion-date": "08/07/2018"
+  },
+  {
+    "title": "Diseño tecno-pedagógico en tus clases: entre lo sincrónico y lo Asincrónico",
+    "pdf": "2024_catolica_disenio_tecno-pedagogico",
+    "platform": "Universidad Católica de Córdoba",
+    "completion-date": "07/19/2024"
+  },
+  {
+    "title": "Portfolio institucional de recursos para docentes",
+    "pdf": "2021_catolica_portfolio.pdf",
+    "platform": "Universidad Católica de Córdoba",
+    "completion-date": "12/21/2021"
+  },
+  {
+    "title": "Taller de edición de videos educativos",
+    "platform": "Universidad Católica de Córdoba",
+    "completion-date": "2021"
+  },
+  {
+    "title": "Turnitin y la integridad académica: herramienta para prevenir el Plagio",
+    "pdf": "2023_catolica_turnitin.pdf",
+    "platform": "Universidad Católica de Córdoba",
+    "completion-date": "12/11/2023"
   }
 ]
