@@ -7,10 +7,10 @@
     <title>CV - Agustina Aliciardi</title>
     <link rel="stylesheet" href="estilos.css" type="text/css" />
     <link rel="shorcut icon" href="images/perfil.png" type="image" />
+    <script type="text/javascript" src="cursos.js"></script>
     <script type="text/JavaScript" src="funciones.js"></script>
   </head>
-  <body>
-    <button type="button" onclick="hola()">Saludar</button>
+  <body onload="completeTrainins()">
     <header>
       <img
         id="img-perfil"
@@ -352,6 +352,7 @@
       <section id="seccion-cursos">
         <img src="images/icon-trainings.webp" alt="cursos" class="icono" />
         <h3>Cursos</h3>
+        <dialog id="training-modal"></dialog>
         <div class="training-container">
           <div class="training">
             <img
