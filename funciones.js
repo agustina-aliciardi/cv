@@ -37,7 +37,10 @@ function aplicarFiltro(seleccionado) {
   completeTrainins(cursosFiltrados);
 }
 
-function buscarPalabra() {
-  const word = document.getElementById("search").value;
-  console.log(word);
+function searchCertificate(certi) {
+  const cursosFiltrados = cursos.filter((curso) =>
+    curso.title.toLocaleLowerCase().includes(certi.toLocaleLowerCase())
+  );
+  console.log(JSON.stringify(cursosFiltrados));
+  completeTrainins(cursosFiltrados);
 }

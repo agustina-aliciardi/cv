@@ -21,55 +21,48 @@
       <h1>Agustina Aliciardi</h1>
       <h2>SDET</h2>
     </header>
-    <nav>
-      <div class="language">
-        <a href="english.html"
-          ><img src="images/usa.png" alt="English Language"
-        /></a>
-        <a href="index.html"
-          ><img src="images/arg.png" alt="Spanish Language"
-        /></a>
-      </div>
-      <div class="main-buttons">
-        <p>
-          <a href="#seccion-perfil">
-            <img src="images/icon-perfil.png" alt="Perfil" />
-          </a>
-        </p>
-        <p>
-          <a href="#seccion-habilidades">
-            <img src="images/icon-skills.png" alt="Habilidades" />
-          </a>
-        </p>
-        <p>
-          <a href="#seccion-experiencia-laboral">
-            <img
-              src="images/icon-work-experience.png"
-              alt="Experiencia Laboral"
-            />
-          </a>
-        </p>
-        <p>
-          <a href="#seccion-academica">
-            <img src="images/icon-academic.webp" alt="Formacion Academica" />
-          </a>
-        </p>
-        <p>
-          <a href="#seccion-cursos">
-            <img src="images/icon-trainings.webp" alt="Cursos" />
-          </a>
-        </p>
-        <p>
-          <a href="#seccion-contacto">
-            <img src="images/icon-contact.png" alt="Contacto" />
-          </a>
-        </p>
-      </div>
-      <div>
-        <label for="search">Buscar:</label>
-        <input type="text" name="search" id="search" placeholder="Buscar..." />
-        <button type="button" onclick="buscarPalabra()">Buscar</button>
-      </div>
+    <nav class="language">
+      <a href="english.html"
+        ><img src="images/usa.png" alt="English Language"
+      /></a>
+      <a href="index.html"
+        ><img src="images/arg.png" alt="Spanish Language"
+      /></a>
+    </nav>
+    <nav class="main-buttons">
+      <p>
+        <a href="#seccion-perfil">
+          <img src="images/icon-perfil.png" alt="Perfil" />
+        </a>
+      </p>
+      <p>
+        <a href="#seccion-habilidades">
+          <img src="images/icon-skills.png" alt="Habilidades" />
+        </a>
+      </p>
+      <p>
+        <a href="#seccion-experiencia-laboral">
+          <img
+            src="images/icon-work-experience.png"
+            alt="Experiencia Laboral"
+          />
+        </a>
+      </p>
+      <p>
+        <a href="#seccion-academica">
+          <img src="images/icon-academic.webp" alt="Formacion Academica" />
+        </a>
+      </p>
+      <p>
+        <a href="#seccion-cursos">
+          <img src="images/icon-trainings.webp" alt="Cursos" />
+        </a>
+      </p>
+      <p>
+        <a href="#seccion-contacto">
+          <img src="images/icon-contact.png" alt="Contacto" />
+        </a>
+      </p>
     </nav>
     <main>
       <section id="seccion-perfil">
@@ -361,6 +354,11 @@
           <option value="DevOps">DevOps</option>
           <option value="Dev">Dev</option>
         </select>
+        <input
+          type="text"
+          id="certiSearch"
+          onchange="searchCertificate(this.value)"
+        />
         <div class="training-container"></div>
       </section>
       <section id="seccion-contacto">
@@ -398,35 +396,6 @@
           >
         </p>
       </section>
-      <article class="container">
-        <div class="slider-wrapper">
-          <div class="slider">
-            <img
-              src="images/carrousel/primera.webp"
-              id="slider-1"
-              alt="carrousel"
-              class="image"
-            />
-            <img
-              src="images/carrousel/segunda.jpg"
-              id="slider-2"
-              alt="carrousel"
-              class="image"
-            />
-            <img
-              src="images/carrousel/tercera.webp"
-              id="slider-3"
-              alt="carrousel"
-              class="image"
-            />
-          </div>
-          <div class="slider-nav">
-            <a href="#slider-1" class="slider-button"></a>
-            <a href="#slider-2" class="slider-button"></a>
-            <a href="#slider-3" class="slider-button"></a>
-          </div>
-        </div>
-      </article>
     </main>
   </body>
 </html>
