@@ -354,26 +354,14 @@
         <img src="images/icon-trainings.webp" alt="cursos" class="icono" />
         <h3>Cursos</h3>
         <dialog id="training-modal"></dialog>
-        <div class="training-container">
-          <div class="training">
-            <img
-              src="images/certificates/2021_tau_behavior_driven_python.png"
-            />
-            <h5>behavior_driven_python</h5>
-          </div>
-          <div class="training">
-            <img
-              src="images/certificates/2021_tau_behavior_driven_python.png"
-            />
-            <h5>behavior_driven_python</h5>
-          </div>
-          <div class="training">
-            <img
-              src="images/certificates/2021_tau_behavior_driven_python.png"
-            />
-            <h5>behavior_driven_python</h5>
-          </div>
-        </div>
+        <select id="opciones" onchange="aplicarFiltro(this.value)">
+          <option value="all">Todos</option>
+          <option value="QA">QA</option>
+          <option value="Universidad">Universidad</option>
+          <option value="DevOps">DevOps</option>
+          <option value="Dev">Dev</option>
+        </select>
+        <div class="training-container"></div>
       </section>
       <section id="seccion-contacto">
         <img src="images/icon-contact.png" alt="Contacto" class="icono" />

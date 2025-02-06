@@ -1,8 +1,8 @@
-function completeTrainins() {
+function completeTrainins(cursosAmostrar = cursos) {
   const container = document.getElementsByClassName("training-container")[0];
   let contenido = "";
 
-  cursos.forEach((element, $id) => {
+  cursosAmostrar.forEach((element, $id) => {
     if (element?.image) {
       contenido += `<div class="training" onClick="displayModal(${$id})">
             <img src="images/certificates/${element.image}" alt="${element.title}" />
@@ -26,4 +26,16 @@ function displayModal(numberCert) {
 
 function closeModal() {
   document.getElementById("training-modal").style.display = "none";
+}
+
+function aplicarFiltro(seleccionado) {
+  console.log(seleccionado);
+  const cursosFiltrados =
+    seleccionado === "all"
+      ? cursos
+      : cursos.filter((curso) => curso.type.includes(seleccionado));
+
+  console.log(`Mostrar: ${JSON.stringify(cursosFiltrados)}`);
+
+  completeTrainins(cursosFiltrados);
 }
