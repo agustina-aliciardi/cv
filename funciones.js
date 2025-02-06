@@ -29,13 +29,15 @@ function closeModal() {
 }
 
 function aplicarFiltro(seleccionado) {
-  console.log(seleccionado);
   const cursosFiltrados =
     seleccionado === "all"
       ? cursos
       : cursos.filter((curso) => curso.type.includes(seleccionado));
 
-  console.log(`Mostrar: ${JSON.stringify(cursosFiltrados)}`);
-
   completeTrainins(cursosFiltrados);
+}
+
+function buscarPalabra() {
+  const word = document.getElementById("search").value;
+  console.log(word);
 }
