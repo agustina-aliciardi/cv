@@ -172,9 +172,19 @@ header {
 
 .training-container {
   display: grid;
-  grid-template-columns: auto auto auto;
   gap: 10px;
   margin-bottom: 20px;
+}
+@media (width <= 700px) {
+  .training-container {
+    grid-template-columns: auto;
+  }
+}
+
+@media (width >= 701px) {
+  .training-container {
+    grid-template-columns: auto auto auto;
+  }
 }
 
 .training-container div img {
@@ -185,4 +195,8 @@ header {
 .training-container div {
   background-color: rgb(188, 239, 255);
   border-radius: 10px;
+}
+
+dialog img {
+  max-width: 80%;
 }
